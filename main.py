@@ -8,7 +8,7 @@ def move_file_to_specified_folder(file_name, file_extension, current_directory):
         ".png": "Images",
         ".jpeg": "Images",
         ".jpg": "Images",
-        ".webp": "Images"
+        ".webp": "Images",
     }
 
     # If file_extension is not in map ignore it
@@ -47,7 +47,7 @@ def main():
     # Ask to be sure to move it
     is_sure = input("Type YES to start the process: ")
 
-    if is_sure is not "YES":
+    if is_sure != "YES":
         print("Cancelling the Process")
         return
 
