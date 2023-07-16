@@ -5,10 +5,14 @@ import shutil
 def move_file_to_specified_folder(file_name, file_extension, current_directory):
     # TODO: Add more extension and its folders, for now I only require this extensions
     extension_to_folder = {
+        # Images
         ".png": "Images",
         ".jpeg": "Images",
         ".jpg": "Images",
         ".webp": "Images",
+
+        # PDF
+        ".pdf": "PDF",
     }
 
     # If file_extension is not in map ignore it
